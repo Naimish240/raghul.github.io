@@ -1,10 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-/*
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -719,6 +715,9 @@ input[type="radio"] + label:before {
   color: rgba(255, 255, 255, 0.5) !important;
   opacity: 1.0; }
 
+  
+  
+
 /* Button */
 input[type="submit"],
 input[type="reset"],
@@ -798,6 +797,59 @@ button,
   #header {
     margin: 0 0 1em 0; } }
 
+    button {
+      border: none;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.95);
+      cursor: pointer;
+    }
+  
+    .explore {
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.95);
+      border: 1px solid white;
+      transition: 0.3s all ease-in-out;
+    }
+    .explore:hover {
+      background: rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.85);
+    }
+    .button {
+      padding: 2rem 7rem;
+      background: white;
+      text-align: center;
+      display: inline-block;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      position: relative;
+      will-change: transform;
+    }
+    
+    .button-mat {
+      color: #5533ff;
+      border: 0px transparent;
+      border-radius: 0.3rem;
+      transition: 0.3s ease-in-out;
+      transition-delay: 0.35s;
+      overflow: hidden;
+    }
+    .button-mat:before {
+      content: "";
+      display: block;
+      background: #401aff;
+      position: absolute;
+      width: 200%;
+      height: 500%;
+      border-radius: 100%;
+      transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
+    }
+    .button-mat:hover .psuedo-text {
+      color: white;
+    }
+    .button-mat:hover {
+      color: transparent;
+    }
 /* Signup Form */
 #signup-form {
   display: -moz-flex;
@@ -885,3 +937,4 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
+     
