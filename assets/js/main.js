@@ -172,7 +172,7 @@
 							} while (currentDate - date < milliseconds);
 						  }
 						sleep(750)
-					    window.open("/portfolio/2.html", "_blank");
+					    window.open("/portfolio/2.html", "_self");
 				});
 
 		})();
