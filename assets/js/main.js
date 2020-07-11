@@ -159,11 +159,20 @@
 								$submit.disabled = false;
 
 							// Show message.
-								$message._show('success', 'Thank you!');
+								//$message._show('success', 'Thank you!');
 								//$message._show('failure', 'Something went wrong. Please try again.');
-
+						
 						}, 750);
-
+						$message._show('success', 'Thank you!');
+						function sleep(milliseconds) {
+							const date = Date.now();
+							let currentDate = null;
+							do {
+							  currentDate = Date.now();
+							} while (currentDate - date < milliseconds);
+						  }
+						sleep(750)
+					    window.open("/portfolio/2.html", "_blank");
 				});
 
 		})();
